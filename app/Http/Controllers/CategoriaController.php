@@ -15,7 +15,7 @@ class CategoriaController extends Controller
     public function equipos()
     {
         $categoria = Categoria::find(1);
-        $equipos = $categoria->equipos;
+        $equipos = $categorias->equipos;
         dd($equipos);
     }
 
