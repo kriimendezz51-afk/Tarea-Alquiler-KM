@@ -13,11 +13,11 @@ class AlquilerDetalle extends Model
         'cantidad'
     ];
 
-    public function alquilers()
+    public function alquiler()
     {
         return $this->belongsTo(Alquiler::class);
     }
-    public function equipos()
+    public function equipo()
     {
         return $this->belongsTo(Equipo::class);
     }
