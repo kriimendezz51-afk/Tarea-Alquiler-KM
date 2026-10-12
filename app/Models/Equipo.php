@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -19,12 +20,12 @@ class Equipo extends Model
         'estado'
     ];
 
-    public function categorias()
+    public function categoria()
     {
        return $this->belongsTo(Categoria::class);
     }
 
-    public function alquiler_detalles()
+    public function alquilerDetalles()
     {
         return $this->hasMany(AlquilerDetalle::class);
     }
